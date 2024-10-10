@@ -1,0 +1,21 @@
+/* Default for desktop */
+body {
+    background-image: url('p.svg'); /* Desktop image */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Media query for portrait mode on mobile */
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url('Artboard.jpg'); /* Portrait image */
+        background-size: contain; /* Ensures the image fits entirely in view */
+        background-position: center top; /* Centers the image and aligns it at the top */
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+    }
+}
